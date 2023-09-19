@@ -25,4 +25,16 @@
     
 
     }
+
+    select {
+        /* Apply the style to both input and select elements */
+        background: rgba(217, 217, 217, 1);
+        width: 606px;
+        height: 72px;
+        border-radius: 6px;
+        border: none;
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+    }
 }

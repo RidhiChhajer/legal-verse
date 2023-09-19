@@ -1,0 +1,297 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+html {
+  scroll-behavior: smooth;
+  background-color: rgba(14, 2, 47, 1);
+}
+
+
+/* Main Styling */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/*Hero Image*/
+header {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: left; 
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+
+
+
+.header-text {
+  width: 500px;
+  text-align:left;
+  margin-left:20%;
+}
+
+header h1 {
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  font-size: 64px;
+  color: white;
+}
+
+#photography {
+  font-size: 60px;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  margin-bottom: 20px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight:600;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+header button {
+  border: 2px solid white;
+  color: white;
+  font-family: 'Roboto', Segoe UI, calibri, Helvetica, serif;
+  padding: 10px;
+  font-size: 18px;
+  width: 160px;
+  border-radius: 500px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+header button:hover, button:active {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 676px) {
+  .header-text {
+    width: 95%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  #photography {
+    font-size: 45px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  header p {
+    font-size: 15px;
+    width: 85%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  header button {
+    font-size: 16px;
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #photography {
+    font-size: 35px;
+  }
+  header h1 {
+    font-size: 28px;
+  }
+}
+/*Hero Image*/
+
+#login{
+  border-radius: 12px;
+  color: rgba(14, 2, 47, 1);
+  background-color: #f4f4f4;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  font-family:'Poppins', sans-serif;
+  font-style: bold;
+  margin-right: 15px;
+}
+#signup{
+  border-radius: 12px;
+  color: #f4f4f4;
+  background-color: rgba(14, 2, 47, 1);
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  font-family:'Poppins', sans-serif;
+  border-color: rgba(14, 2, 47, 1);
+}
+
+.container {
+  width: 80%;
+  border-radius: 12px;
+  padding: 20px;
+  background: linear-gradient(180deg, #CAC6C6 0%, #CBCFFB 100%);
+  box-shadow: 0px 4px 10px 0px #FFF;
+  height:60%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.card1{
+  border-right: 2px solid rgb(110, 110, 110);
+  padding-left: 10px;
+  width: 33%;
+}
+.card2{
+  border-right: 2px solid rgb(110, 110, 110);
+  padding-left: 10px;
+  width: 33%;
+}
+.card3{
+  padding-left: 10px;
+  width: 33%;
+}
+.flex-partition {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.partition-card1 {
+  margin-left:70px;
+  width: 30%;
+  height: 60%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding-top:50px;
+}
+.partition-card2 {
+  width: 60%;
+  height:400px;
+  padding: 10px;
+  text-align: center;
+}
+h1{
+  font-family: 'JetBrains Mono', monospace;
+  color: #361A88;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  font-size:48px;
+}
+h6{
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.icon-mission::before {
+  content: url('../../assets/mission-icon.jpeg');
+  margin-right: 1px; 
+  
+  width:5px;
+  height: 5px;
+}
+
+.icon-vision::before {
+  content: url('../../assets/vision-icon.jpeg'); 
+  margin-right: 1px; 
+  margin-top:5px;
+  width:5px;
+  height: 5px;
+}
+
+.icon-aim::before {
+  content: url('../../assets/aim-icon.jpeg'); 
+  margin-right: 1px; 
+  margin-top:5px;
+  width:2px;
+  height: 2px;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left; 
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left; 
+  margin-left:10%;
+}
+#aboutus{
+  text-align: left;
+}
+
+/* .flexicon{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+.flex-icon {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  flex: 0.08; /* The image container takes up 1/2 of the available space */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+img {
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  height: auto;
+}
+
+.text-container {
+  flex: 1; 
+  padding: 20px; /* Adjust padding as needed */
+  text-align: left; /* Adjust text alignment as needed */
+  margin-left:-2%;
+}
+.subLV{
+  border-left:5px solid rgba(225, 193, 23, 1);
+  padding-left: 20px;
+}
+
+/* added by ridhi */
+
+.myBg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
