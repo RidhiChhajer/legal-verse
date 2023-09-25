@@ -3,7 +3,7 @@ import Form_5 from "../../component/form/Form_5";
 import '../DocSimp/docsimp.scss'
 import React, { useState } from 'react';
 import './sc.scss';
-
+import loadingIcon from './loading.svg';
 function SC() {
 
     const [inputValues, setInputValues] = useState({
@@ -13,10 +13,11 @@ function SC() {
         inputValue4: '',
         inputValue5: '',
     });
-
+    const [isLoading, setIsLoading] = useState(false);
+    const [showPopup, setShowPopup] = useState(false);
     const handleInputChange = (e) => {
         const { id, value } = e.target;
-
+        
         setInputValues(prevValue => {
             return {
                 ...prevValue,
@@ -26,10 +27,18 @@ function SC() {
 
         console.log(inputValues);
     };
-
     const handleClick = (e) => {
         e.preventDefault();
-    };
+    
+        // Show loading icon
+        setIsLoading(true);
+    
+        // Simulate a delay of 5 seconds
+        setTimeout(() => {
+          setIsLoading(false);
+          setShowPopup(true);
+        }, 5000);
+      };
 
     return (
         <>
@@ -89,6 +98,19 @@ function SC() {
                     }}
                     onSubmit={handleClick}
                 />
+                {isLoading && (
+                    <div className="overlay">
+                    <img src={loadingIcon} alt="Loading..." className="loading-icon" />
+                    </div>
+                )}
+
+                {/* Popup */}
+                {showPopup && (
+                    <div className="popup">
+                    <p className='EL-output'>Your predefined text output goes here.</p>
+                    <button className="close-button" onClick={() => setShowPopup(false)}>Close</button>
+                    </div>
+                )}
             </div>
 
         </>

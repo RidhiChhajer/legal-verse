@@ -14,8 +14,8 @@ function App() {
                 <Navbar />
                 <Routes>
                     <Route path='/' element={<LandingPage />} />
-                    <Route path='/DocumentSimplify' element={<DocSimp />} />
-                    <Route path='/tg' element={<TG />} />
+                    <Route path='/GenerateSummary' element={<DocSimp />} />
+                    <Route path='/GenerateTemplate' element={<TG />} />
                     <Route path='/ExploreLaws' element={<EL />} />
                     <Route path='/ScheduleCall' element={<SC />} />
                 </Routes>

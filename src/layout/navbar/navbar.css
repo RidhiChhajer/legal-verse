@@ -5,7 +5,6 @@ html {
   background-color: rgba(14, 2, 47, 1);
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ html {
   outline: 0;
 }
 
-/* Main Styling */
 body {
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.6;
@@ -29,25 +27,24 @@ a {
   color: #333;
 }
 
-
-/* Navbar Styling */
 .navbar {
+  position: absolute;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 80%;
   height: 50px;
-  background-color: #f4f4f4;
+  background-color: #CAC6C6;
   position: fixed;
   padding: 1.25rem;
   margin-left: 10%;
+  margin-bottom: 20px; 
   z-index: 2;
   border-radius: 12px;
-background: #CAC6C6;
-box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top:-1%;
 }
+
 
 .navbar .logo {
   padding: 1.5rem;
@@ -59,7 +56,7 @@ box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .navbar .logo a:hover {
-  color: #4c6ca0;
+  color: black;
 }
 
 .navbar .nav-menu {
@@ -71,10 +68,9 @@ box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .nav-menu .nav-link:hover {
-  color: #4c6ca0;
+  color: black;
 }
 
-/* Navbar icons */
 .nav-menu .nav-link .nav-icon {
   margin-right: 0.3rem;
 }
@@ -93,12 +89,11 @@ box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #101010;
 }
 
-/* Responsive */
 @media only screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
     right: -100vw;
-    top: 4rem;
+    top: 2rem;
     flex-direction: column;
     min-width: 400px;
     text-align: right;
@@ -144,3 +139,13 @@ box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+.rs-dropdown {
+  border: none !important;
+}
+
+.dropdown:hover .rs-dropdown-toggle {
+  display: block !important;
+}
+
+
