@@ -1,5 +1,5 @@
 import Heading from "../../component/heading/Heading";
-import Form_5 from "../../component/form/Form_5";
+import Form5 from "../../component/form/Form5";
 import '../DocSimp/docsimp.scss'
 import React, { useState } from 'react';
 import './sc.scss';
@@ -49,7 +49,7 @@ function SC() {
             <div className='DocSimp'>
 
                 <Heading title={"Schedule a Call"} description={"In case of complex issues get advice from top lawyers online Book an appointment now !"} />
-                <Form_5
+                <Form5
                     inp1={{
                         id: 'inputValue1',
                         type: 'email',

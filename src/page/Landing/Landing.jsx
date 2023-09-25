@@ -36,7 +36,7 @@ const LandingPage = () => {
         </div>
         <div class="flex-partition">
           <div class="partition-card1">
-            <img src={Click} alt="Click Image" />
+            <img src={Click} alt="click" />
             <p style={{ fontWeight: '500', color: 'black', fontFamily: 'Poppins, sans-serif', fontSize: '20px' }}>We are simplifying the Legal Journey for you: </p><p style={{ fontWeight: '700', color: 'black', fontFamily: 'Poppins, sans-serif', fontSize: '20px' }}>Accessible, Understandable AI-Generated Legal Documents Tailored in just a click.</p>
           </div>
           <div class="partition-card2">
@@ -44,7 +44,7 @@ const LandingPage = () => {
 
             <div class="flex-icon">
               <div class="image-container">
-                <img src={missionIcon} alt="Image" />
+                <img src={missionIcon} alt="mission-icon" />
               </div>
               <div class="text-container">
                 <h2>Mission</h2>
@@ -55,7 +55,7 @@ const LandingPage = () => {
             <br />
             <div class="flex-icon">
               <div class="image-container">
-                <img src={visionIcon} alt="Image" />
+                <img src={visionIcon} alt="vision-icon" />
               </div>
               <div class="text-container">
                 <h2>Vision</h2>
@@ -66,7 +66,7 @@ const LandingPage = () => {
             <br />
             <div class="flex-icon">
               <div class="image-container">
-                <img src={aimIcon} alt="Image" />
+                <img src={aimIcon} alt="aim-icon" />
               </div>
               <div class="text-container">
                 <h2>Aim</h2>
