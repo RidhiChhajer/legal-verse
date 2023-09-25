@@ -1,4 +1,4 @@
-import Input from "../Input/Input";
+import Input from "../Input/Input_5";
 import './form.scss';
 function Form_5(props) {
     return (
